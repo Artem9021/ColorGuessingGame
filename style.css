@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.tile {
+    width: 100%;
+    height: 20vh;
+}
+
+.colors-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.color-code-container {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color {
+    width: 69%;
+}
+
+.score {
+    width: 29%;
+}
+
+.color-code-container p, .color-code-container h2{
+    padding: 7px;
+}
+
+
+.notification {
+    position: fixed;
+    left: 0px;
+    bottom: -15vh;
+    width: 100%;
+    height: 10vh;
+    background: rgb(67, 162, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.notification.open {
+    bottom: 0vh;
+    transition: bottom 0.5s ease-out;
+}
+
+.notification .next, .notification .descript {
+    margin: 20px;
+}
+
+.descript {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.next {
+    padding: 10px 14px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: rgb(67, 162, 30);
+    border-radius: 5px;
+    outline: none;
+
+}
+
+
+
+.introduction {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 50px 20px;
+    transition: top 0.5s ease;
+    
+}
+
+.introduction.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 50px 20px;
+    transition: top 0.7s ease;
+}
+
+
+
+.start {
+    padding: 15px 30px;
+    color: #ffffff;
+    border: 1px none #ffffff;
+    background: #0091ff;
+    border-radius: 0px;
+    outline: none;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+}
+
+.introduction p {
+    font-size: 1rem;
+}

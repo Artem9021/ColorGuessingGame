@@ -1,0 +1,42 @@
+<!--
+update:
+- added correct/wrong counter
+- bug fixed (opportunity to press the right tile after pressing wrong one)
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the color - a game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src = "app.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class = "color-code-container">
+            <div class = "color">
+                <p>Choose the rectangle, which color is:</p>
+                <h2 class = "color-code">rgb(0, 0, 0)</h2>
+            </div>
+            <div class = "score">
+                <p class = "correct">Correct: 0</p>
+                <p class = "wrong">Wrong: 0</p>
+            </div>
+        </div>
+        <div class = "colors-container">
+            
+        </div>
+        <div class = "notification">
+            <span class = "descript">Correct</span>
+            <button class = "next">Next</button>
+        </div>
+        <div class = "introduction open">
+            <h2>Welcome</h2>
+            <p>This is the Guess The Color game. Please read the instruntions carefully: <br />You will be given a color code in rgb and six rectangles. Your task is to guess which of rectangles is this color. For example, rgb(10, 5, 240) will be blue rectangle. If you guess incorrectly, the correct answer will be highlighted with white border. The game is ifinite. Good luck!</p>
+            <button class="start">Start Playing</button>
+        </div>
+        
+    </body>
+</html>
